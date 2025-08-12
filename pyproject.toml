@@ -1,0 +1,10 @@
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.mutmut]
+paths_to_mutate = "src/loja"
+tests_dir = "tests"
+runner = "python -m pytest -q"
+backup = false
